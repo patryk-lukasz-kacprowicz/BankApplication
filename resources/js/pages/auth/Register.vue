@@ -26,18 +26,63 @@ import { LoaderCircle } from 'lucide-vue-next';
         >
             <div class="grid gap-6">
                 <div class="grid gap-2">
-                    <Label for="name">Name</Label>
+                    <Label for="first_name">First name</Label>
                     <Input
-                        id="name"
+                        id="first_name"
                         type="text"
                         required
                         autofocus
                         :tabindex="1"
-                        autocomplete="name"
-                        name="name"
-                        placeholder="Full name"
+                        autocomplete="first_name"
+                        name="first_name"
+                        placeholder="First name"
                     />
-                    <InputError :message="errors.name" />
+                    <InputError :message="errors.first_name" />
+                </div>
+
+                <div class="grid gap-2">
+                    <Label for="first_name">Last name</Label>
+                    <Input
+                        id="last_name"
+                        type="text"
+                        required
+                        autofocus
+                        :tabindex="1"
+                        autocomplete="last_name"
+                        name="last_name"
+                        placeholder="Last name"
+                    />
+                    <InputError :message="errors.last_name" />
+                </div>
+
+                <div class="grid gap-2">
+                    <Label for="national_id">Country of residence</Label>
+                    <Input
+                        id="country_of_residence"
+                        type="text"
+                        required
+                        autofocus
+                        :tabindex="1"
+                        autocomplete="country_of_residence"
+                        name="country_of_residence"
+                        placeholder="Country of residence eg. PL"
+                    />
+                    <InputError :message="errors.country_of_residence" />
+                </div>
+
+                <div class="grid gap-2">
+                    <Label for="national_id">National ID</Label>
+                    <Input
+                        id="national_id"
+                        type="text"
+                        required
+                        autofocus
+                        :tabindex="1"
+                        autocomplete="national_id"
+                        name="national_id"
+                        placeholder="National ID"
+                    />
+                    <InputError :message="errors.national_id" />
                 </div>
 
                 <div class="grid gap-2">
